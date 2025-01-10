@@ -2,8 +2,8 @@
      "version": 2,
      "builds": [
        {
-         "src": "index.js", // Make sure this points to the correct entry point
-         "use": "@vercel/node" // Or the appropriate builder for your framework
+         "src": "index.js", 
+         "use": "@vercel/node" 
        }
      ],
      "routes": [
