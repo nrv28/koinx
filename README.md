@@ -100,7 +100,7 @@ This is the home route for the application.
 #### Example Response:
 The root route simply displays a default message or homepage. Below is an example output:
 
-![Home Route Example](./resource/get.jpg)
+![Home Route Example](./postman_samples/get.png)
 
 ---
 
@@ -127,7 +127,7 @@ curl "http://localhost:5000/api/stats?coin=bitcoin"
 ```
 
 #### Example Response Image:
-![API 1 Example](./resource/api1.jpg)
+![API 1 Example](./postman_samples/api1.png)
 
 ---
 
@@ -152,7 +152,7 @@ curl "http://localhost:5000/api/deviation?coin=bitcoin"
 ```
 
 #### Example Response Image:
-![API 2 Example](./resource/api2.jpg)
+![API 2 Example](./postman_samples/api2.png)
 
 ---
 
