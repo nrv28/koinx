@@ -14,19 +14,32 @@ This is a Node.js backend application that fetches cryptocurrency data using the
 
 ## Project Structure
 
-crypto_server_app/ │ ├── config/ │ └── db.js # MongoDB connection configuration ├── controllers/ │ ├── statsController.js # Logic for retrieving cryptocurrency stats │ └── deviationController.js # Logic for calculating standard deviation ├── routes/ │ └── apiRoutes.js # API routes definitions ├── models/ │ └── cryptoData.js # Mongoose schema for storing cryptocurrency data ├── jobs/ │ └── fetchCryptoData.js # Background job to fetch cryptocurrency data ├── .env # Environment variables (e.g., MONGO_URI, PORT) ├── server.js # Main entry point of the application └── package.json # Project metadata and dependencies
+```plaintext
+crypto_server_app/
+│
+├── config/
+│   └── db.js                # MongoDB connection configuration
+├── controllers/
+│   ├── statsController.js   # Logic for retrieving cryptocurrency stats
+│   └── deviationController.js # Logic for calculating standard deviation
+├── routes/
+│   └── apiRoutes.js         # API routes definitions
+├── models/
+│   └── cryptoData.js        # Mongoose schema for storing cryptocurrency data
+├── jobs/
+│   └── fetchCryptoData.js   # Background job to fetch cryptocurrency data
+├── .env                     # Environment variables (e.g., MONGO_URI, PORT)
+├── server.js                # Main entry point of the application
+└── package.json             # Project metadata and dependencies
 
-yaml
+
+Installation and Setup
+Clone the Repository
+
+bash
 Copy code
-
----
-
-## Installation and Setup
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/<your-username>/<your-repository>.git
-   cd crypto_server_app
+git clone https://github.com/<your-username>/<your-repository>.git
+cd crypto_server_app
 Install Dependencies
 
 bash
@@ -107,15 +120,3 @@ Implement authentication for API endpoints.
 Add user-specific data tracking and notifications.
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-Author
-Name: Your Name
-GitHub: Your GitHub Profile
-markdown
-Copy code
-
-### Steps to Use
-1. Replace placeholders like `<your-username>` and `<your-repository>` with actual details.
-2. Save this content in a `README.md` file in the root of your project.
-
-Let me know if you need help customizing it!
