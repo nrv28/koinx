@@ -30,6 +30,10 @@ crypto_server_app/
 │   └── fetchCryptoData.js   # Background job to fetch cryptocurrency data
 ├── .env                     # Environment variables (e.g., MONGO_URI, PORT)
 ├── server.js                # Main entry point of the application
+├── resource/                # Images for documentation
+│   ├── get.jpg              # Home route example image
+│   ├── api1.jpg             # Coin stats API example image
+│   └── api2.jpg             # Deviation API example image
 └── package.json             # Project metadata and dependencies
 ```
 
@@ -89,7 +93,18 @@ npm start
 
 ## APIs
 
-### 1. `/api/stats`
+### 1. `/`
+
+This is the home route for the application.
+
+#### Example Response:
+The root route simply displays a default message or homepage. Below is an example output:
+
+![Home Route Example](./resource/get.jpg)
+
+---
+
+### 2. `/api/stats`
 
 Retrieve the latest stats for a cryptocurrency.
 
@@ -111,9 +126,12 @@ curl "http://localhost:5000/api/stats?coin=bitcoin"
 }
 ```
 
+#### Example Response Image:
+![API 1 Example](./resource/api1.jpg)
+
 ---
 
-### 2. `/api/deviation`
+### 3. `/api/deviation`
 
 Calculate the standard deviation of the price for the last 100 records of a cryptocurrency.
 
@@ -132,6 +150,9 @@ curl "http://localhost:5000/api/deviation?coin=bitcoin"
   "deviation": 4082.48
 }
 ```
+
+#### Example Response Image:
+![API 2 Example](./resource/api2.jpg)
 
 ---
 
@@ -176,10 +197,3 @@ This data is fetched using the [CoinGecko API](https://www.coingecko.com/en/api/
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 ```
-
-### Key Adjustments:
-- Properly closed the `Project Structure` code block with triple backticks.
-- Ensured the **Installation and Setup** section starts separately after the code block.
-- Consistent formatting for sections, lists, and code blocks.
-
-This will now render perfectly in Markdown viewers, including GitHub. Let me know if further tweaks are needed!
