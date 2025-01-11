@@ -209,4 +209,4 @@ This data is fetched using the [CoinGecko API](https://www.coingecko.com/en/api/
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-```
+
