@@ -2,6 +2,19 @@
 
 This is a Node.js backend application that fetches cryptocurrency data using the CoinGecko API and provides endpoints to retrieve stats and calculate the standard deviation of prices.
 
+### 1. `/`
+#### Example Response Image:
+![Home Route Example](./postman_samples/get.png)
+
+### 2. `/api/stats`
+#### Example Response Image:
+![API 1 Example](./postman_samples/api1.png)
+
+### 3. `/api/deviation`
+#### Example Response Image:
+![API 2 Example](./postman_samples/api2.png)
+
+
 ## Features
 
 - Fetch cryptocurrency stats (price, market cap, and 24-hour change) for Bitcoin, Ethereum, and Matic every 2 hours.
